@@ -3,13 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>hey.sales by Christoph Grube</title>
-<meta name="description" content="Sales Management & Consulting für Wachstum und Vertriebserfolg. Dynamisch, authentisch und verlässlich.">
+<title>hey.sales | Vertriebsberatung München | Christoph Grube</title>
+<meta name="description" content="Sales Management & Consulting für Gründer, Startups und KMU. Vertriebsberatung aus Krailling bei München. Persönlich, modern, verlässlich.">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
+
 *{
 margin:0;
 padding:0;
@@ -20,12 +22,13 @@ scroll-behavior:smooth;
 body{
 font-family:'Inter',sans-serif;
 background:#0d0d0d;
-color:#ffffff;
+color:#fff;
 line-height:1.6;
+overflow-x:hidden;
 }
 
 .container{
-width:90%;
+width:92%;
 max-width:1180px;
 margin:auto;
 }
@@ -38,7 +41,7 @@ width:100%;
 background:rgba(13,13,13,.92);
 backdrop-filter:blur(10px);
 z-index:999;
-border-bottom:1px solid rgba(255,255,255,.08);
+border-bottom:1px solid rgba(255,255,255,.07);
 }
 
 nav{
@@ -49,20 +52,20 @@ padding:18px 0;
 }
 
 nav img{
-height:42px;
+height:62px;
 }
 
 nav ul{
 display:flex;
-gap:26px;
+gap:28px;
 list-style:none;
 }
 
 nav a{
 color:#fff;
 text-decoration:none;
-font-size:15px;
 font-weight:600;
+font-size:15px;
 transition:.2s;
 }
 
@@ -71,18 +74,19 @@ color:#f4c400;
 }
 
 .hero{
-padding:150px 0 90px;
+padding:170px 0 90px;
 display:grid;
 grid-template-columns:1.1fr .9fr;
-gap:50px;
+gap:60px;
 align-items:center;
 }
 
 .hero h1{
 font-size:58px;
 line-height:1.05;
-margin-bottom:22px;
+margin-bottom:24px;
 font-weight:800;
+animation:fadeUp 1s ease;
 }
 
 .gold{
@@ -92,21 +96,22 @@ color:#f4c400;
 .hero p{
 font-size:21px;
 opacity:.9;
-max-width:620px;
 margin-bottom:34px;
+max-width:620px;
+animation:fadeUp 1.3s ease;
 }
 
 .btn-row{
 display:flex;
-gap:16px;
+gap:14px;
 flex-wrap:wrap;
 }
 
 .btn{
 padding:15px 24px;
 border-radius:12px;
-font-weight:700;
 text-decoration:none;
+font-weight:700;
 display:inline-block;
 transition:.2s;
 }
@@ -117,7 +122,7 @@ color:#111;
 }
 
 .primary:hover{
-transform:translateY(-2px);
+transform:translateY(-3px);
 }
 
 .secondary{
@@ -127,8 +132,9 @@ color:#fff;
 
 .hero img{
 width:100%;
-border-radius:20px;
-box-shadow:0 25px 50px rgba(0,0,0,.45);
+border-radius:22px;
+box-shadow:0 25px 55px rgba(0,0,0,.45);
+animation:fadeUp 1.5s ease;
 }
 
 section{
@@ -138,13 +144,7 @@ border-top:1px solid rgba(255,255,255,.05);
 
 h2{
 font-size:38px;
-margin-bottom:26px;
-}
-
-.lead{
-opacity:.82;
-max-width:760px;
-margin-bottom:38px;
+margin-bottom:25px;
 }
 
 .grid{
@@ -158,18 +158,18 @@ background:#171717;
 padding:28px;
 border-radius:18px;
 border:1px solid rgba(255,255,255,.05);
-transition:.2s;
+transition:.25s;
 }
 
 .card:hover{
-transform:translateY(-4px);
-border-color:rgba(244,196,0,.35);
+transform:translateY(-5px);
+border-color:rgba(244,196,0,.4);
 }
 
 .card h3{
-font-size:21px;
-margin-bottom:12px;
 color:#f4c400;
+margin-bottom:12px;
+font-size:22px;
 }
 
 .about{
@@ -179,7 +179,7 @@ gap:40px;
 align-items:center;
 }
 
-.aboutbox{
+.box{
 background:#171717;
 padding:35px;
 border-radius:18px;
@@ -188,7 +188,7 @@ border-radius:18px;
 .stats{
 display:grid;
 grid-template-columns:repeat(2,1fr);
-gap:18px;
+gap:16px;
 margin-top:25px;
 }
 
@@ -205,52 +205,111 @@ font-size:28px;
 color:#f4c400;
 }
 
-.contact{
+.contact-box{
 background:#171717;
 padding:38px;
 border-radius:20px;
 }
 
-.contact a{
+.contact-box a{
 color:#f4c400;
 text-decoration:none;
 }
 
+form{
+margin-top:25px;
+}
+
+input,textarea{
+width:100%;
+padding:14px;
+margin-bottom:14px;
+border:none;
+border-radius:12px;
+background:#111;
+color:#fff;
+font-family:inherit;
+}
+
+textarea{
+min-height:130px;
+resize:vertical;
+}
+
+button{
+border:none;
+cursor:pointer;
+}
+
 footer{
-padding:40px 0;
-text-align:center;
+padding:45px 0;
 font-size:14px;
-opacity:.75;
+opacity:.8;
+text-align:center;
 border-top:1px solid rgba(255,255,255,.06);
 }
 
 footer a{
 color:#f4c400;
 text-decoration:none;
-margin:0 10px;
+margin:0 8px;
+}
+
+.whatsapp{
+position:fixed;
+right:18px;
+bottom:18px;
+background:#25D366;
+color:#fff;
+padding:14px 18px;
+border-radius:999px;
+font-weight:700;
+text-decoration:none;
+box-shadow:0 10px 25px rgba(0,0,0,.3);
+z-index:999;
+}
+
+@keyframes fadeUp{
+from{
+opacity:0;
+transform:translateY(25px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
 }
 
 @media(max-width:980px){
+
+nav ul{
+display:none;
+}
 
 .hero,
 .about{
 grid-template-columns:1fr;
 }
 
-.hero h1{
-font-size:42px;
-}
-
-nav ul{
-display:none;
-}
-
 .hero{
-padding-top:130px;
+padding-top:145px;
+}
+
+.hero h1{
+font-size:40px;
+}
+
+nav img{
+height:56px;
 }
 
 h2{
 font-size:32px;
+}
+
+.whatsapp{
+bottom:14px;
+right:14px;
 }
 
 }
@@ -260,10 +319,13 @@ font-size:32px;
 
 <body>
 
+<a class="whatsapp" href="https://wa.me/4915156646690" target="_blank">WhatsApp</a>
+
 <header>
 <div class="container">
 <nav>
-<img src="hey.sales Logo 2026.png" alt="hey.sales">
+<img src="hey.sales Logo 2026.png" alt="hey.sales Logo">
+
 <ul>
 <li><a href="#leistungen">Leistungen</a></li>
 <li><a href="#zielgruppen">Zielgruppen</a></li>
@@ -286,6 +348,7 @@ Ich unterstütze Gründer, Startups und KMU dabei, Vertrieb professionell aufzub
 <div class="btn-row">
 <a href="#kontakt" class="btn primary">Jetzt Kontakt aufnehmen</a>
 <a href="mailto:christoph.grube@hey-sales.de" class="btn secondary">E-Mail senden</a>
+<a href="https://www.linkedin.com/company/115808394" target="_blank" class="btn secondary">LinkedIn</a>
 </div>
 </div>
 
@@ -299,33 +362,31 @@ Ich unterstütze Gründer, Startups und KMU dabei, Vertrieb professionell aufzub
 <div class="container">
 
 <h2>Leistungen</h2>
-<p class="lead">
-Praxisnahes Sales Consulting mit Fokus auf Umsetzung, Wachstum und messbare Ergebnisse.
-</p>
 
 <div class="grid">
 
 <div class="card">
 <h3>Sales Management Consulting</h3>
-<p>Vertriebsstrukturen, Prozesse und Performance professionell aufbauen.</p>
+<p>Klare Vertriebsstrukturen, bessere Steuerung und mehr Performance.</p>
 </div>
 
 <div class="card">
 <h3>Business Development</h3>
-<p>Neue Potenziale identifizieren und Umsatz gezielt entwickeln.</p>
+<p>Neue Märkte erschließen und Umsatzpotenziale realisieren.</p>
 </div>
 
 <div class="card">
 <h3>Key Account Management</h3>
-<p>Wichtige Kunden professionell gewinnen, entwickeln und sichern.</p>
+<p>Wichtige Kunden professionell entwickeln und sichern.</p>
 </div>
 
 <div class="card">
 <h3>Personal Sales Coach</h3>
-<p>Für Berufseinsteiger im Handel, FMCG und modernen Vertrieb.</p>
+<p>Für Berufseinsteiger im Vertrieb, Handel und FMCG.</p>
 </div>
 
 </div>
+
 </div>
 </section>
 
@@ -336,25 +397,10 @@ Praxisnahes Sales Consulting mit Fokus auf Umsetzung, Wachstum und messbare Erge
 
 <div class="grid">
 
-<div class="card">
-<h3>Gründer</h3>
-<p>Erste Kunden gewinnen und professionellen Vertrieb aufbauen.</p>
-</div>
-
-<div class="card">
-<h3>Startups</h3>
-<p>Skalierbare Vertriebsprozesse für schnelles Wachstum.</p>
-</div>
-
-<div class="card">
-<h3>KMU</h3>
-<p>Mehr Umsatz durch Fokus, Struktur und klare Umsetzung.</p>
-</div>
-
-<div class="card">
-<h3>Talente</h3>
-<p>Karriere im Vertrieb gezielt beschleunigen.</p>
-</div>
+<div class="card"><h3>Gründer</h3><p>Professionellen Vertrieb von Beginn an aufbauen.</p></div>
+<div class="card"><h3>Startups</h3><p>Skalierbare Sales-Strukturen für Wachstum.</p></div>
+<div class="card"><h3>KMU</h3><p>Mehr Umsatz durch Fokus, Struktur und Umsetzung.</p></div>
+<div class="card"><h3>Talente</h3><p>Karriere im Vertrieb gezielt beschleunigen.</p></div>
 
 </div>
 
@@ -365,29 +411,19 @@ Praxisnahes Sales Consulting mit Fokus auf Umsetzung, Wachstum und messbare Erge
 <div class="container about">
 
 <div>
-<h2>Über Christoph</h2>
+<h2>Über mich</h2>
 
-<p>
-Seit 2008 im internationalen FMCG-Umfeld bei MARS tätig.
-</p>
-
+<p>Seit 2008 im internationalen FMCG Umfeld bei MARS tätig.</p>
 <br>
-
-<p>
-18 Jahre Vertriebserfahrung in einem der weltweit führenden Konsumgüterunternehmen – mit Fokus auf Handel, Wachstum, Kundenentwicklung und Performance.
-</p>
-
+<p>18 Jahre Vertriebserfahrung mit Fokus auf Handel, Wachstum, Kundenentwicklung und Performance.</p>
 <br>
-
-<p>
-Authentisch im Kontakt. Klar in der Sache. Verlässlich in der Umsetzung.
-</p>
+<p>Authentisch im Kontakt. Klar in der Sache. Verlässlich in der Umsetzung.</p>
 
 <div class="stats">
 
 <div class="stat">
 <strong>18+</strong>
-Jahre Sales Erfahrung
+Jahre Erfahrung
 </div>
 
 <div class="stat">
@@ -396,29 +432,25 @@ Start bei MARS
 </div>
 
 <div class="stat">
-<strong>B2B</strong>
-Vertrieb & Handel
-</div>
-
-<div class="stat">
 <strong>100%</strong>
 Praxisnah
 </div>
 
+<div class="stat">
+<strong>B2B</strong>
+Sales & Handel
 </div>
 
 </div>
 
-<div class="aboutbox">
-<h3 class="gold">Warum hey.sales?</h3>
+</div>
+
+<div class="box">
+<h3 style="color:#f4c400;">Warum hey.sales?</h3>
 <br>
-<p>
-Weil moderner Vertrieb keine Buzzwords braucht – sondern Klarheit, Umsetzung und echte Ergebnisse.
-</p>
+<p>Weil moderner Vertrieb keine Buzzwords braucht – sondern Klarheit, Umsetzung und echte Ergebnisse.</p>
 <br>
-<p>
-Ich verbinde Konzern-Erfahrung mit unternehmerischem Denken und persönlicher Zusammenarbeit auf Augenhöhe.
-</p>
+<p>Ich verbinde Konzern-Erfahrung mit unternehmerischem Denken und persönlicher Zusammenarbeit auf Augenhöhe.</p>
 </div>
 
 </div>
@@ -429,20 +461,33 @@ Ich verbinde Konzern-Erfahrung mit unternehmerischem Denken und persönlicher Zu
 
 <h2>Kontakt</h2>
 
-<div class="contact">
+<div class="contact-box">
 
 <p><strong>E-Mail:</strong><br>
 <a href="mailto:christoph.grube@hey-sales.de">christoph.grube@hey-sales.de</a></p>
 
 <br>
 
-<p><strong>LinkedIn:</strong><br>
-hey.sales by Christoph Grube</p>
+<p><strong>Telefon / WhatsApp:</strong><br>
+<a href="tel:+4915156646690">+49 151 56646690</a></p>
 
 <br>
 
-<p><strong>Erstgespräch:</strong><br>
-Unverbindlich. Persönlich. Direkt.</p>
+<p><strong>LinkedIn:</strong><br>
+<a href="https://www.linkedin.com/company/115808394" target="_blank">hey.sales LinkedIn</a></p>
+
+<form action="https://formsubmit.co/christoph.grube@hey-sales.de" method="POST">
+
+<input type="hidden" name="_captcha" value="false">
+<input type="hidden" name="_subject" value="Neue Anfrage über hey-sales.de">
+
+<input type="text" name="Name" placeholder="Name" required>
+<input type="email" name="E-Mail" placeholder="E-Mail" required>
+<textarea name="Nachricht" placeholder="Ihre Nachricht" required></textarea>
+
+<button class="btn primary" type="submit">Nachricht senden</button>
+
+</form>
 
 </div>
 
@@ -452,12 +497,24 @@ Unverbindlich. Persönlich. Direkt.</p>
 <footer>
 <div class="container">
 
-hey.sales by Christoph Grube · Krailling · Deutschland
+<p><strong>Impressum</strong><br>
+Christoph Grube<br>
+hey.sales<br>
+Rosenstr. 6A<br>
+82152 Krailling<br>
+Deutschland<br>
+E-Mail: christoph.grube@hey-sales.de<br>
+Telefon: +49 151 56646690
+</p>
 
-<div style="margin-top:12px;">
-<a href="#">Impressum</a>
-<a href="#">Datenschutz</a>
-</div>
+<br>
+
+<p><strong>Datenschutz</strong><br>
+Personenbezogene Daten werden ausschließlich zur Bearbeitung Ihrer Anfrage verwendet. Diese Website nutzt keine Tracking-Tools. Kontaktanfragen über das Formular werden über Formsubmit verarbeitet.</p>
+
+<br>
+
+© 2026 hey.sales by Christoph Grube
 
 </div>
 </footer>
